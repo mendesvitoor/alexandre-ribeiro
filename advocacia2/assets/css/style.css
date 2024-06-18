@@ -31,6 +31,7 @@
   --camel: hsl(27, 34%, 58%);
   --white: hsl(0, 0%, 100%);
   --tematico: hsla(40, 45%, 49%);
+  --black-navbar: rgb(0, 0, 0);
 
   /**
    * gradient
@@ -266,6 +267,20 @@ body.active { overflow: hidden; }
   gap: 30px;
 }
 
+.grid-list-item-service {
+  display: grid;
+  gap: 30px;
+}
+
+.menu .grid-list-item-service {
+  background-color: var(--black-navbar);
+  padding: 20px;
+  gap: 40px;
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: center;
+}
+
 .text-center { text-align: center; }
 
 [data-reveal] {
@@ -298,7 +313,7 @@ body.active { overflow: hidden; }
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--rich-black-fogra-29);
+  background-color: var(--black-navbar);
   padding-block: 5px;
   z-index: 4;
 }
@@ -432,11 +447,12 @@ body.active { overflow: hidden; }
   #ABOUT
 \*-----------------------------------*/
 
-.about { background-color: var(--rich-black-fogra-39); }
+.about { background-color: var(--black-navbar); }
 
 .about .container {
   display: grid;
-  gap: 50px;
+  gap: 70px;
+  padding: 20px;
 }
 
 .about .section-title {
@@ -472,7 +488,7 @@ body.active { overflow: hidden; }
   #SERVICE
 \*-----------------------------------*/
 
-.service { background-color: var(--rich-black-fogra-39); }
+.service { background-color: var(--black-navbar); }
 
 .service-card {
   position: relative;
@@ -533,18 +549,18 @@ body.active { overflow: hidden; }
 .menu .section-title { margin-block-end: 50px; }
 
 .menu .grid-list {
-  background-color: var(--rich-black-fogra-39);
+  background-color: var(--black-navbar);
   padding: 20px;
   gap: 40px;
   background-repeat: no-repeat;
-  background-size: 500px;
+  background-size: 700px;
   background-position: center;
 }
 
 .menu-card .card-banner {
-  width: 160px;
+  width: 200px;
   border-radius: var(--radius-5);
-  margin-block-end: 15px;
+  margin-block-end: 50px;
 }
 
 .menu-card .card-content { display: grid; }
@@ -552,7 +568,7 @@ body.active { overflow: hidden; }
 .menu-card .card-text { margin-block: 10px; }
 
 .menu-card .card-price {
-  color: var(--camel);
+  color: var(--tematico);
   font-family: var(--ff-merienda);
   font-size: var(--fs-4);
   text-align: right;
@@ -562,7 +578,7 @@ body.active { overflow: hidden; }
   top: 50%;
   left: 0;
   width: calc(100% - 60px);
-  border-block-end: 3px dotted var(--camel);
+  border-block-end: 3px dotted var(--tematico);
 }
 
 
@@ -642,6 +658,7 @@ body.active { overflow: hidden; }
 .blog-card :is(.card-meta, .meta-wrapper) {
   display: flex;
   align-items: center;
+  
 }
 
 .blog-card .card-meta {
@@ -680,7 +697,9 @@ body.active { overflow: hidden; }
   #FOOTER
 \*-----------------------------------*/
 
-.footer { background-color: var(--rich-black-fogra-39); }
+.footer { 
+  background-color: var(--black-navbar);
+}
 
 .footer-top {
   color: var(--white);
@@ -702,12 +721,14 @@ body.active { overflow: hidden; }
 }
 
 .footer-list .strong {
-  color: var(--dark-orange);
+  color: var(--tematico);
   font-family: var(--ff-merienda);
   margin-inline-start: 18px;
 }
 
-.footer-list .span { color: var(--tematico); }
+.footer-list .span { 
+  color: var(--tematico); 
+}
 
 .footer-list .wrapper {
   display: flex;
@@ -716,11 +737,13 @@ body.active { overflow: hidden; }
   margin-block-start: 10px;
 }
 
-.footer-list .wrapper .span { font-weight: var(--fw-600); }
+.footer-list .wrapper .span { 
+  font-weight: var(--fw-600);
+}
 
 .footer-list ion-icon {
   margin-block-start: 7px;
-  color: var(--camel);
+  color: var(--tematico);
   font-size: 35px;
   --ionicon-stroke-width: 35px;
 }
@@ -730,13 +753,19 @@ body.active { overflow: hidden; }
   gap: 8px;
 }
 
-.footer-bottom { padding-block: 30px; }
+.footer-bottom { 
+  padding-block: 30px;
+}
 
 .copyright {
   text-align: center;
   font-size: var(--fs-5);
 }
 
+.copyright2 {
+  text-align: center;
+  color: var(--tematico);
+}
 
 
 
@@ -916,7 +945,7 @@ body.active { overflow: hidden; }
   .header-top {
     display: block;
     color: var(--light-gray);
-    background-color: var(--rich-black-fogra-39);
+    background-color: var(--black-navbar);
     padding-block: 13px;
   }
 
@@ -930,7 +959,6 @@ body.active { overflow: hidden; }
     display: flex;
     gap: 3px;
     font-size: var(--fs-5);
-    text-transform: uppercase;
   }
 
   .header-top-text :is(ion-icon, .span) { color: var(--tematico); }
