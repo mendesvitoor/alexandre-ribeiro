@@ -136,7 +136,7 @@ html {
 }
 
 body {
-  background-color: var(--rich-black-fogra-29);
+  background-color: var(--tematico);
   color: var(--white_a60);
   font-size: 1.6rem;
   line-height: 1.75;
@@ -612,7 +612,8 @@ ul.grid-list {
 .menu .section-title { margin-block-end: 50px; }
 
 .menu .grid-list {
-  background-color: var(--rich-black-fogra-29);
+  border: 2px solid #AFA24A;
+  border-radius: 2%;
   padding: 20px;
   gap: 40px;
   background-repeat: no-repeat;
@@ -929,7 +930,7 @@ ul.grid-list {
     max-width: 300px; /* Tamanho máximo do card */
     padding: 16px;
     border-radius: 8px;
-    background-color: var(--rich-black-fogra-29);
+    /* background-color: var(--rich-black-fogra-29); */
     /* display: flex;
     align-items: center;
     gap: 20px; */
