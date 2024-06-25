@@ -3,11 +3,8 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2024 Init Solutions
+ * copyright 2024 Init. Solutions
  */
-
-
-
 
 
 /*-----------------------------------*\
@@ -262,82 +259,8 @@ body.active { overflow: hidden; }
   height: 100%;
   object-fit: cover;
   transition: var(--transition-2);
-}
-
-.grid-list2 {
-  display: grid;
-  gap: 30px;
-}
-
-.grid-list-item-service {
-  display: grid;
-  gap: 30px;
-}
-
-.menu .grid-list-item-service {
-  background-color: var(--black-navbar);
-  padding: 20px;
-  gap: 40px;
-  background-repeat: no-repeat;
-  background-size: 700px;
-  background-position: center;
-}
-
-ul.grid-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 16px; 
-  justify-content: flex-start; 
-}
-
-.menu-card {
-  display: grid;
-  flex-direction: column;
+  border-radius: 15px;
   align-items: center;
-  width: 100%; /* Para tornar o card responsivo */
-  max-width: 400px; /* Tamanho máximo do card */
-  padding: 16px;
-  border-radius: 8px;
-}
-
-.card-banner img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  text-align: center;
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px 0;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  margin-bottom: 8px;
-  text-align: center;
-}
-
-.card-text {
-  font-size: 1rem;
-  margin-bottom: 8px;
-  text-align: center;
-}
-
-.card-text2 {
-  font-size: 15px;
-  margin-bottom: 8px;
-  text-align: left;
-}
-
-.card-title2 {
-  font-size: var(--fs-4);
-  margin-bottom: 8px;
-  text-align: left;
-  color: var(--tematico);
 }
 
 .text-center { text-align: center; }
@@ -500,8 +423,22 @@ ul.grid-list {
   gap: 10px;
 }
 
-
-
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: -60px;
+  background-color: black;
+}
+.btn-tematico {
+  display: flex;
+  align-items: center;
+  
+}
+.btn-tematico .span {
+  margin-right: 8px;
+}
 
 
 /*-----------------------------------*\
@@ -540,8 +477,6 @@ ul.grid-list {
   font-style: italic;
   color: var(--white);
 }
-
-
 
 
 
@@ -591,13 +526,11 @@ ul.grid-list {
 .service-card:is(:hover, :focus-visible) .card-content::before { opacity: 1; }
 
 .service-card .card-content ion-icon {
-  font-size: 50px;
+  font-size: 80px;
   color: var(--white);
   margin-inline: auto;
   margin-block-end: 5px;
 }
-
-
 
 
 
@@ -617,7 +550,7 @@ ul.grid-list {
   padding: 20px;
   gap: 40px;
   background-repeat: no-repeat;
-  background-size: 700px;
+  background-size: 400px;
   background-position: center;
 }
 
@@ -631,13 +564,8 @@ ul.grid-list {
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
-  width: 100%;
   height: auto;
   object-fit: cover;
-  /* width: 200px;
-  border-radius: var(--radius-5);
-  margin-block-end: 50px;
-  align-items: center; */
 }
 
 .menu-card .card-content { 
@@ -647,10 +575,6 @@ ul.grid-list {
   padding: 16px 0;
   display: grid; 
 }
-
-/* .menu-card .card-text { 
-  margin-block: 10px; 
-} */
 
 .center-item {
   flex: 0 0 100%; 
@@ -684,7 +608,87 @@ ul.grid-list {
   border-block-end: 3px dotted var(--tematico);
 }
 
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  max-width: 400px; 
+  padding: 16px;
+  border-radius: 8px;
+}
 
+.card-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  text-align: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.card-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.card-text2 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.card-title2 {
+  font-size: var(--fs-4);
+  margin-bottom: 8px;
+  text-align: left;
+  color: var(--tematico);
+}
+
+.grid-list2 {
+  display: grid;
+  gap: 30px;
+}
+
+.grid-list {
+  grid-template-columns: repeat(3, 1fr); 
+  display: grid;
+  gap: 30px;
+}
+
+.grid-list-item-service {
+  display: grid;
+  gap: 30px;
+}
+
+.menu .grid-list-item-service {
+  background-color: var(--black-navbar);
+  padding: 20px;
+  gap: 40px;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center;
+}
+
+ul.grid-list {
+  display: grid;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 16px; 
+  justify-content: flex-start; 
+}
 
 
 
@@ -873,7 +877,7 @@ ul.grid-list {
 
 .footer-list .grid-list {
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
 }
 
 .footer-bottom { 
@@ -921,21 +925,15 @@ ul.grid-list {
   /**
    * MENU
    */
-
   .menu-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Para tornar o card responsivo */
-    max-width: 300px; /* Tamanho máximo do card */
+    width: 100%; 
+    max-width: 400px; 
     padding: 16px;
     border-radius: 8px;
-    /* background-color: var(--rich-black-fogra-29); */
-    /* display: flex;
-    align-items: center;
-    gap: 20px; */
   }
-
 
 
   /**
