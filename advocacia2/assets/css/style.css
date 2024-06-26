@@ -663,6 +663,12 @@ body.active { overflow: hidden; }
 }
 
 .grid-list {
+  grid-template-columns: repeat(1, 1fr); 
+  display: grid;
+  gap: 30px;
+}
+
+.grid-list3 {
   grid-template-columns: repeat(3, 1fr); 
   display: grid;
   gap: 30px;
@@ -689,7 +695,10 @@ ul.grid-list {
   gap: 16px; 
   justify-content: flex-start; 
 }
-
+.grid-list li {
+  height: 720px;
+  margin: auto;
+}
 
 
 /*-----------------------------------*\
@@ -953,6 +962,7 @@ ul.grid-list {
  */
 
 @media (min-width: 768px) {
+
 
   /**
    * CUSTOM PROPERTY
